@@ -29,7 +29,7 @@ module Trb1
         end
 
         def collection_representer_class
-          JSON::Collection
+          Trb1::Representable::JSON::Collection
         end
       end
 

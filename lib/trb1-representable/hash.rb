@@ -9,7 +9,7 @@ module Trb1
     module Hash
       def self.included(base)
         base.class_eval do
-          include Representable # either in Hero or HeroRepresentation.
+          include Trb1::Representable # either in Hero or HeroRepresentation.
           extend ClassMethods
           register_feature Trb1::Representable::Hash
         end

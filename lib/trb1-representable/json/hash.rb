@@ -6,7 +6,7 @@ module Trb1::Representable::JSON
   module Hash
     def self.included(base)
       base.class_eval do
-        include Representable
+        include Trb1::Representable
         extend ClassMethods
         include Trb1::Representable::JSON
         include Trb1::Representable::HashMethods
