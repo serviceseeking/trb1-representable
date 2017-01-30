@@ -119,7 +119,7 @@ module Trb1
       end
     end
 
-    # require "representable/deprecations"
+    # require "trb1-representable/deprecations"
   end
 
   require 'trb1-representable/autoload'

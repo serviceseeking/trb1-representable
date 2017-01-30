@@ -41,7 +41,7 @@ module Trb1
 
       def [](name)
         # return nil if name==:extend && self[:nested].nil?
-        # return Uber::Options::Value.new(self[:nested]) if name==:extend
+        # return Trb1::Uber::Options::Value.new(self[:nested]) if name==:extend
         @runtime_options[name]
       end
 
@@ -80,7 +80,7 @@ module Trb1
 
       def inspect
         state = (instance_variables-[:@runtime_options, :@name]).collect { |ivar| "#{ivar}=#{instance_variable_get(ivar)}" }
-        "#<Representable::Definition ==>#{name} #{state.join(" ")}>"
+        "#<Trb1::Representable::Definition ==>#{name} #{state.join(" ")}>"
       end
 
     private

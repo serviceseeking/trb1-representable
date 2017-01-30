@@ -13,7 +13,7 @@ module Trb1
         singular = self
 
         # what happens here is basically
-        # Module.new { include Representable::JSON::Collection; ... }
+        # Module.new { include Trb1::Representable::JSON::Collection; ... }
         nested_builder.(
           _base:     default_nested_class,
           _features: [singular.collection_representer_class],

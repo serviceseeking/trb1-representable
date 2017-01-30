@@ -35,7 +35,7 @@ module Trb1
 
 
         class Collection < self
-          include Representable::Binding::Collection
+          include Trb1::Representable::Binding::Collection
 
           def node_for(fragments)
             Psych::Nodes::Sequence.new.tap do |seq|

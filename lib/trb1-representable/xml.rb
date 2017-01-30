@@ -5,7 +5,7 @@ require 'trb1-representable/xml/collection'
 begin
   require 'nokogiri'
 rescue LoadError => _
-  abort "Missing dependency 'nokogiri' for Representable::XML. See dependencies section in README.md for details."
+  abort "Missing dependency 'nokogiri' for Trb1::Representable::XML. See dependencies section in README.md for details."
 end
 
 module Trb1

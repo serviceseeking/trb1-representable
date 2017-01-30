@@ -1,7 +1,7 @@
 module Trb1
   module Representable
     module Object
-      class Binding < Representable::Binding
+      class Binding < Trb1::Representable::Binding
         def self.build_for(definition)  # TODO: remove default arg.
           return Collection.new(definition)  if definition.array?
           new(definition)
